@@ -1,0 +1,203 @@
+{
+  "Border box": {
+    "prefix": "borderbox",
+    "body": [
+      "html {",
+      "  box-sizing: border-box;",
+      "}",
+      "",
+      "*, *::before, *::after {",
+      "  box-sizing: inherit;",
+      "}"
+    ]
+  },
+  "CSS all": {
+    "prefix": "css-all",
+    "body": [
+      "<link href=\"css/modules.css\" rel=\"stylesheet\">",
+      "<link href=\"css/grid.css\" rel=\"stylesheet\">",
+      "<link href=\"css/type.css\" rel=\"stylesheet\">",
+      "<link href=\"css/main.css\" rel=\"stylesheet\">"
+    ]
+  },
+  "CSS": {
+    "prefix": "css",
+    "body": "<link href=\"${1}.css\" rel=\"stylesheet\">"
+  },
+  "CSS @viewport": {
+    "prefix": "cssviewport",
+    "body": [
+      "@-moz-viewport { width: device-width; scale: 1; }",
+      "@-ms-viewport { width: device-width; scale: 1; }",
+      "@-o-viewport { width: device-width; scale: 1; }",
+      "@-webkit-viewport { width: device-width; scale: 1; }",
+      "@viewport { width: device-width; scale: 1; }"
+    ]
+  },
+  "Favicons": {
+    "prefix": "favicons",
+    "body": [
+      "<link rel=\"shortcut icon\" href=\"favicon.ico\">",
+      "<link rel=\"icon\" type=\"image/png\" href=\"favicon-196.png\">"
+    ]
+  },
+  "HTML5": {
+    "prefix": ["html", "html5"],
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en-ca\">",
+      "<head>",
+      "  <meta charset=\"utf-8\">",
+      "  <title>${1}</title>",
+      "</head>",
+      "<body>",
+      "  ${2}",
+      "</body>",
+      "</html>"
+    ]
+  },
+  "Humans.txt": {
+    "prefix": "humanstxt",
+    "body": [
+      "# humanstxt.org",
+      "",
+      "# TEAM",
+      "",
+      "${1:Designer & Developer}: ${2:Thomas J Bradley} <${3:hey@thomasjbradley.ca}>",
+      "Site: ${4:http://thomasjbradley.ca}",
+      "GitHub: ${5:https://github.com/thomasjbradley}",
+      "Twitter: @${6:thomasjbradley}",
+      "Location: ${7:Ottawa, Canada}",
+      "",
+      "---",
+      "",
+      "# THANKS",
+      "",
+      "${8}",
+      "",
+      "---",
+      "",
+      "# TECHNOLOGY",
+      "",
+      "## Software",
+      "",
+      "- Sublime Text 3 (with Vintageous)",
+      "- Git + GitHub",
+      "- Grunt.js",
+      "- CoffeeScript",
+      "- Stylus",
+      "- UglifyJS",
+      "- Markdown",
+      "",
+      "## Hosting",
+      "",
+      "- WiredTree <http://wiredtree.com>"
+    ]
+  },
+  "Humans.txt citation": {
+    "prefix": "cite",
+    "body": [
+      "- “${1:TITLE}” © ${2:AUTHOR}",
+      "  Used under CC BY-SA",
+      "  ${3:URL}"
+    ]
+  },
+  "Jekyll, Django template tag": {
+    "prefix": "jk",
+    "body": "{% ${1} %}"
+  },
+  "JavaScript <script> tag": {
+    "prefix": "js",
+    "body": ["<script>", "  ${1}", "</script>"]
+  },
+  "JavaScript external soure tag": {
+    "prefix": "jss",
+    "body": "<script src=\"${1}.js\"></script>"
+  },
+  "Meta tag": {
+    "prefix": "meta",
+    "body": "<meta name=\"${1}\" content=\"${2}\">"
+  },
+  "MIT license": {
+    "prefix": "mit",
+    "body": [
+      "The MIT License (MIT)",
+      "",
+      "Copyright (c) $CURRENT_YEAR Thomas J Bradley",
+      "",
+      "Permission is hereby granted, free of charge, to any person obtaining a copy",
+      "of this software and associated documentation files (the \"Software\"), to deal",
+      "in the Software without restriction, including without limitation the rights",
+      "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+      "copies of the Software, and to permit persons to whom the Software is",
+      "furnished to do so, subject to the following conditions:",
+      "",
+      "The above copyright notice and this permission notice shall be included in all",
+      "copies or substantial portions of the Software.",
+      "",
+      "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+      "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+      "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+      "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+      "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+      "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE",
+      "SOFTWARE."
+    ]
+  },
+  "Media query": {
+    "prefix": "mq",
+    "body": [
+      "@media only screen and (min-width: ${1:25}em) {",
+      "",
+      "  ${2}",
+      "",
+      "}"
+    ]
+  },
+  "Robots.txt": {
+    "prefix": "robotstxt",
+    "body": [
+      "# robotstxt.org",
+      "",
+      "Sitemap: http://${1}/sitemap.xml",
+      "",
+      "User-Agent: *",
+      "Disallow:"
+    ]
+  },
+  "Sitemap.xml": {
+    "prefix": "sitemapxml",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+      "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">",
+      "",
+      "  <url>",
+      "    <loc>http://${1}</loc>",
+      "    <lastmod>${2:2005-01-01}</lastmod>",
+      "    <changefreq>${3:monthly}</changefreq>",
+      "    <priority>${4:0.5}</priority>",
+      "  </url>",
+      "",
+      "  ${5}",
+      "",
+      "</urlset>"
+    ]
+  },
+  "Text size adjust": {
+    "prefix": "textsize",
+    "body": [
+      "-moz-text-size-adjust: 100%;",
+      "-ms-text-size-adjust: 100%;",
+      "-webkit-text-size-adjust: 100%;",
+      "text-size-adjust: 100%;"
+    ]
+  },
+  "Viewport": {
+    "prefix": "viewport",
+    "body": [
+      "<meta name=\"handheldfriendly\" content=\"true\">",
+      "<meta name=\"mobileoptimized\" content=\"240\">",
+      "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
+    ]
+  }
+}
