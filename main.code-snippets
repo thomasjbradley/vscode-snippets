@@ -95,7 +95,7 @@
     ]
   },
   "Humans.txt citation": {
-    "prefix": "cite",
+    "prefix": "humanscite",
     "body": [
       "- “${1:TITLE}” © ${2:AUTHOR}",
       "  Used under CC BY-SA",
